@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		game.load.image('sky', '../assets/sky.png');
 		game.load.image('ground', '../assets/platform.png');
 		game.load.image('star', '../assets/star.png');
-		game.load.spritesheet('dude', '../assets/dude.png', 32, 48);
+		game.load.spritesheet('ivor', '../assets/ivor.png', 32, 48);
+
 	}
 
 	function create() {
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		ledge.body.immovable = true;
 
-		player = game.add.sprite(32, game.world.height - 150, 'dude');
+		player = game.add.sprite(32, game.world.height - 150, 'ivor');
 
 		//  We need to enable physics on the player
 		game.physics.arcade.enable(player);
